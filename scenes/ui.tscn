@@ -1,4 +1,11 @@
-[gd_scene format=3 uid="uid://66qw27q26u71"]
+[gd_scene load_steps=4 format=3 uid="uid://66qw27q26u71"]
+
+[ext_resource type="Script" uid="uid://pn15x6wacuso" path="res://scripts/progress_bar.gd" id="1_nt7q6"]
+[ext_resource type="FontFile" uid="uid://cl1x5amvba38g" path="res://assets/PixelOperatorMono8.ttf" id="1_x4jx1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x4jx1"]
+bg_color = Color(1, 0.275582, 0.585773, 1)
+anti_aliasing = false
 
 [node name="ui" type="Control"]
 z_index = 2
@@ -18,5 +25,10 @@ offset_right = 5.0
 offset_bottom = 50.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_x4jx1")
+theme_override_font_sizes/font_size = 8
+theme_override_styles/fill = SubResource("StyleBoxFlat_x4jx1")
+step = 0.001
+value = 100.0
 fill_mode = 3
-show_percentage = false
+script = ExtResource("1_nt7q6")

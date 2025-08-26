@@ -8,8 +8,8 @@
 [node name="main" type="Node"]
 
 [node name="ui" parent="." instance=ExtResource("1_jyhfs")]
-offset_left = -232.86
-offset_right = -232.86
+offset_left = -219.86
+offset_right = -219.86
 
 [node name="Camera2D" parent="." instance=ExtResource("2_0wfyh")]
 editor_draw_limits = true
